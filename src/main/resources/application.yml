@@ -1,0 +1,10 @@
+server:
+    port: 8087
+    servlet.context-path: /category
+spring:
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: local
+
