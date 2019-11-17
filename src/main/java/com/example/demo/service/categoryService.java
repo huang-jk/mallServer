@@ -1,13 +1,19 @@
 package com.example.demo.service;
 
-import com.example.demo.ObjectData.ProductCategoryController;
-import com.example.demo.repository.ProductCategory;
+import com.example.demo.ObjectData.ProductCategory;
 
 import java.util.List;
 
 /**
  * Created by Administrator on 2019/11/3.
  */
-public interface categoryService {
-    ProductCategory byId(Integer categoryId);
+public interface CategoryService {
+    ProductCategory findOne(Integer categoryId);
+
+    List<ProductCategory> findAll();
+
+    List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList);
+
+    ProductCategory save(ProductCategory productCategory);
+
 }
