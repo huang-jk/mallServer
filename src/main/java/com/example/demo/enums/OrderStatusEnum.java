@@ -1,8 +1,11 @@
 package com.example.demo.enums;
 
+import lombok.Getter;
+
 /**
  * Created by yl2258 on 2019/11/12.
  */
+@Getter
 public enum OrderStatusEnum {
     NEW(0, "新订单"),
     FINISHED(1, "完结"),
@@ -18,3 +21,4 @@ public enum OrderStatusEnum {
         this.message = message;
     }
 }
+

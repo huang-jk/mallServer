@@ -5,7 +5,7 @@ import com.example.demo.ObjectData.ProductCategory;
 import java.util.List;
 
 /**
- * Created by Administrator on 2019/11/3.
+ * Created by yl2258 on 2019/11/18.
  */
 public interface CategoryService {
     ProductCategory findOne(Integer categoryId);

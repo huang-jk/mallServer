@@ -4,12 +4,14 @@ import com.example.demo.ObjectData.ProductCategory;
 import com.example.demo.repository.ProductCategoryRepository;
 import com.example.demo.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Administrator on 2019/11/17.
  */
+@Service
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
@@ -17,7 +19,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public ProductCategory findOne(Integer categoryId) {
-        return repository.findOne(categoryId);
+        return null;
     }
 
     @Override
@@ -27,11 +29,11 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList) {
-        return repository.findByCategoryTypeIn();
+        return repository.findByCategoryTypeIn(categoryTypeList);
     }
 
     @Override
     public ProductCategory save(ProductCategory productCategory) {
-        return null;
+        return repository.save(productCategory);
     }
 }

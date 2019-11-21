@@ -2,6 +2,7 @@ package com.example.demo.ObjectData;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.math.BigDecimal;
 
@@ -15,23 +16,30 @@ public class ProductInfo {
     private String productId;
 
     /* 名字 */
+    @Field("productName")
     private String productName;
 
     /* 单价 */
+    @Field("productPrice")
     private BigDecimal productPrice;
 
     /* 库存 */
+    @Field("productStock")
     private Integer productStock;
 
     /* 描述 */
+    @Field("productDescription")
     private Integer productDescription;
 
     /* 小图 */
+    @Field("productIcon")
     private Integer productIcon;
 
     /* 状态  0是正常1下架*/
+    @Field("productStatus")
     private Integer productStatus;
 
     /* 类目编号*/
+    @Field("categoryType")
     private Integer categoryType;
 }
