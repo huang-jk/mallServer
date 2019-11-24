@@ -2,6 +2,7 @@ package com.example.demo.service.impl;
 
 import com.example.demo.ObjectData.ProductInfo;
 import com.example.demo.enums.PayStatusEnum;
+import com.example.demo.enums.ProductStatusEnum;
 import com.example.demo.repository.ProductInfoRepository;
 import com.example.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +32,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductInfo> findUpAll() {
-//        return repository.findByProductStatusIn();
-        return null;
+        return repository.findByProductStatusIn(ProductStatusEnum.DOWN.getCode());
     }
 
     @Override

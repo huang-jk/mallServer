@@ -25,9 +25,9 @@ public class ProductCategoryRepositoryTest {
     @Test
     public void save() {
         ProductCategory productCategory = new  ProductCategory();
-        productCategory.setCategoryId(new Integer(4545));
-        productCategory.setCategoryName("毛巾");
-        productCategory.setCategoryType(new Integer(666));
+        productCategory.setCategoryId(new Integer(1));
+        productCategory.setCategoryName("大家都爱");
+        productCategory.setCategoryType(new Integer(1));
         repository.save(productCategory);
     }
     @Test
