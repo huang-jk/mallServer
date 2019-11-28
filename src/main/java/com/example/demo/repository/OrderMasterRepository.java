@@ -9,5 +9,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * Created by Administrator on 2019/11/24.
  */
 public interface OrderMasterRepository extends MongoRepository<OrderMaster, String> {
-    Page<OrderMaster> findByBuyerOpenideIn(String buyerOpenid, Pageable pageable);
+    Page<OrderMaster> findByBuyerOpenidIn(String buyerOpenid, Pageable pageable);
 }

@@ -9,5 +9,5 @@ import java.util.List;
  * Created by Administrator on 2019/11/24.
  */
 public interface OrderDetailRepository extends MongoRepository<OrderDetail, String> {
-    List<OrderDetail> findOrderIdIn(String orderId);
+    List<OrderDetail> findByOrderIdIn(String orderId);
 }

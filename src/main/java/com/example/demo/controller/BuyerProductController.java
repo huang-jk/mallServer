@@ -2,7 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.ObjectData.ProductCategory;
 import com.example.demo.ObjectData.ProductInfo;
-import com.example.demo.VO.ProductInfoVO;
 import com.example.demo.VO.ProductVO;
 import com.example.demo.VO.ResultVO;
 import com.example.demo.service.CategoryService;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import utils.ResultVOUtils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

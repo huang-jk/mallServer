@@ -25,7 +25,8 @@ public class ProductServiceImplTest {
 
     @Test
     public void testFindOne() throws Exception {
-
+        ProductInfo result =  productService.findOne("12345673333");
+        Assert.assertNotNull(result);
     }
 
     @Test
@@ -41,8 +42,8 @@ public class ProductServiceImplTest {
     @Test
     public void testSave() throws Exception {
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("123456");
-        productInfo.setProductName("皮皮虾");
+        productInfo.setProductId("12345673333");
+        productInfo.setProductName("下虾皮");
         productInfo.setProductPrice(new BigDecimal(3.2));
         productInfo.setProductStock(100);
         productInfo.setProductDescription("很好吃虾子");
